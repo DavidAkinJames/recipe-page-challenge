@@ -1,0 +1,182 @@
+:root {
+  /* Colors derived from the design */
+  --color-nutmeg: #854632;
+  --color-dark-raspberry: #7a284e;
+  --color-rose-white: #fff7fc;
+  --color-egg-shell: #f3e5d8;
+  --color-light-grey: #e3ddd7;
+  --color-wenge-brown: #5f564d;
+  --color-dark-charcoal: #312e2c;
+  --color-white: #ffffff;
+  --color-black: #00000: ;
+}
+
+/* the styling starts here*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-egg-shell);
+  color: var(--color-wenge-brown);
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Card Container*/
+.recipe-card {
+  background-color: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  max-width: 736px;
+  width: 100%;
+}
+/* Image styling */
+.image-container img {
+  width: 100%;
+  display: block;
+  border-radius: 0.75rem;
+}
+
+/* Typography */
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  color: var(--color-dark-charcoal);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-block-start: 2rem;
+  margin-block-end: 1.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Divider Line */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-light-grey);
+  margin: 2rem 0;
+}
+
+/* Prep Time Box */
+.prep-time {
+  background-color: var(--color-rose-white);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin: 2rem 0;
+}
+
+.prep-time h3 {
+  color: var(--color-dark-raspberry);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem;
+  margin-block-end: 1rem;
+}
+
+.prep-time ul li {
+  padding-inline-start: 1rem;
+  margin-block-end: 0.5rem;
+}
+
+/* Lists (Shared Styles) */
+ul,
+ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem; /* Space between bullet and text */
+}
+
+li::marker {
+  color: var(--color-nutmeg); /* Coloring the bullets/numbers */
+  font-weight: bold;
+}
+
+/* Specific styling for Instructions ordered list to bold the numbers */
+.instructions ol li::marker {
+  font-weight: 700;
+}
+
+/* Nutrition Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+/* Remove border from last row */
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:first-child {
+  padding-left: 2rem;
+}
+
+td.value {
+  color: var(--color-nutmeg);
+  font-weight: 700;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 650px) {
+  /* 1. Reset Body Layout */
+  body {
+    /* Remove the centering flexbox behavior */
+    display: block;
+    padding: 0;
+    background-color: var(--color-egg-shell);
+  }
+
+  /* 2. Adjusting Card Container */
+  .recipe-card {
+    /* Remove border radius to make it look like a full mobile app view */
+    border-radius: 0;
+    /* Remove max-width constraint so it flows naturally */
+    max-width: 100%;
+    /* Reduce internal spacing */
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  /* 3. Image Adjustments */
+  .image-container {
+    /* On mobile, images usually look better edge-to-edge or with less radius */
+    border-radius: 0;
+  }
+
+  /* 4. Typography Tweaks */
+  h1 {
+    font-size: 2rem; /* Make the title slightly smaller */
+    margin-top: 1.5rem;
+  }
+
+  /* 5. Layout Adjustments */
+  /* Ensure the nutrition table text doesn't get squashed */
+  td:first-child {
+    padding-left: 0.5rem; /* Reduce left padding on table */
+  }
+}
