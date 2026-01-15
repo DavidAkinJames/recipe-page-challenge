@@ -11,17 +11,16 @@ The designs were created to the following widths:
 
 ## Colors
 
-- White: hsl(0, 0%, 100%)
+  --color-nutmeg: #854632;
+  --color-dark-raspberry: #7a284e;
+  --color-rose-white: #fff7fc;
+  --color-egg-shell: #f3e5d8;
+  --color-light-grey: #e3ddd7;
+  --color-wenge-brown: #5f564d;
+  --color-dark-charcoal: #312e2c;
+  --color-white: #ffffff;
+  --color-black: #00000: ;
 
-- Stone 100: hsl(30, 54%, 90%)
-- Stone 150: hsl(30, 18%, 87%)
-- Stone 600: hsl(30, 10%, 34%)
-- Stone 900: hsl(24, 5%, 18%)
-
-- Brown 800: hsl(14, 45%, 36%)
-
-- Rose 800: hsl(332, 51%, 32%)
-- Rose 50: hsl(330, 100%, 98%)
 
 ## Typography
 
