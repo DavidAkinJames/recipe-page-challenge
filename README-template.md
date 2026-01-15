@@ -7,8 +7,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/responsive-recipe-menu-using-css-flex-r-DVlcMUld
